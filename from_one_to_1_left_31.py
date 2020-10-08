@@ -17,12 +17,12 @@ def from_one_to_1_left_31(output_file_name, sum_file_name):
     sum_file.close()
 
 def main():
-    from_one_to_1_left_31(sys.argv[1], sys.argv[2])
-
-if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("usage: \n$ python output_file.txt sum_file.txt")
         sys.exit(1)
 
+    from_one_to_1_left_31(sys.argv[1], sys.argv[2])
+
+if __name__ == "__main__":
     main()
 
